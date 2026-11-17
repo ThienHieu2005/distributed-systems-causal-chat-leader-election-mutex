@@ -1,0 +1,13 @@
+PASS 1: 4 independent processes bind 4 TCP ports (one listener each)
+PASS 2: SV2 election chooses Node 4
+PASS 3: SV1 causal chat delivers on other 3 nodes
+PASS 4: SV3 four concurrent increments complete
+PASS 5: shared counter is exactly 4
+PASS 6: each node enters critical section
+PASS 7: each node leaves critical section
+PASS 8: status includes chat, election and mutex state
+PASS 9: SV2 elects new leader Node 3 after Node 4 stops
+PASS 10: SV3 refuses CS without Node 4 permission
+PASS 11: counter unchanged when permission incomplete
+PASS 12: SV1 chat still works among remaining nodes
+RESULT: 12/12 PASS

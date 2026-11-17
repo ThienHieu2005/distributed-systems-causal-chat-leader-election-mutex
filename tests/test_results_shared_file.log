@@ -1,0 +1,14 @@
+PASS 1: Four processes started
+PASS 2: Leader = Node 4
+PASS 3: Four concurrent writes complete
+PASS 4: Exactly four document lines
+PASS 5: Each document line appears exactly once with correct Node ID
+PASS 6: Every writer enters RA critical section
+PASS 7: Every writer exits RA critical section
+PASS 8: Board command displays shared document
+PASS 9: Oversized content is rejected
+PASS 10: Invalid content does not modify shared file
+PASS 11: Leader changes to Node 3
+PASS 12: Write denied without permission from crashed Node 4
+PASS 13: Shared file stays identical after refused write
+RESULT: 13/13 PASS
